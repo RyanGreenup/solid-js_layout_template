@@ -3,14 +3,24 @@ import { FileRoutes } from "@solidjs/start/router";
 import { Suspense } from "solid-js";
 import Nav from "~/components/Nav";
 import "./app.css";
+import ResponsiveLayoutPage, {
+  MainContent,
+  navItems,
+  ResponsiveLayout,
+  SidebarContent,
+} from "./components/layout";
+
 
 export default function App() {
   return (
     <Router
-      root={props => (
+      root={(props) => (
         <>
-          <Nav />
-          <Suspense>{props.children}</Suspense>
+          <ResponsiveLayout
+            sidebarContent={() => <SidebarContent navItems={navItems} />}
+          >
+            <Suspense>{props.children}</Suspense>
+          </ResponsiveLayout>
         </>
       )}
     >
