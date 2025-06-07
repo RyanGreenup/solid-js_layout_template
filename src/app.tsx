@@ -5,10 +5,10 @@ import Nav from "~/components/Nav";
 import "./app.css";
 import ResponsiveLayoutPage, {
   MainContent,
-  navItems,
   ResponsiveLayout,
   SidebarContent,
 } from "./components/layout/layout";
+import { navItems } from "./components/layout/SidebarContent";
 
 
 export default function App() {
