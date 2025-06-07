@@ -8,7 +8,7 @@ import ResponsiveLayoutPage, {
   navItems,
   ResponsiveLayout,
   SidebarContent,
-} from "./components/layout";
+} from "./components/layout/layout";
 
 
 export default function App() {
