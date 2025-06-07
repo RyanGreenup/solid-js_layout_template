@@ -1,11 +1,6 @@
 import { Component, createEffect, JSXElement } from "solid-js";
+import { SidebarProps } from "../types";
 
-interface SidebarProps {
-  isOpen: boolean;
-  onClose: () => void;
-  navbarPosition?: string;
-  children: JSXElement;
-}
 
 const SIDEBAR_WIDTH = "w-80";
 
