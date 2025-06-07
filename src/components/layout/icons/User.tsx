@@ -1,4 +1,3 @@
-
 import { Component } from "solid-js";
 import { IconProps } from "./types";
 

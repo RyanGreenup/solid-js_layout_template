@@ -68,5 +68,4 @@ const BottomNavbarContent: Component<BottomNavbarContentProps> = (props) => {
   );
 };
 
-
 export default BottomNavbarContent;

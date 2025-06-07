@@ -25,5 +25,4 @@ const NavItemButton: Component<{
   </button>
 );
 
-
 export default NavItemButton;

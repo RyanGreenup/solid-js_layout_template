@@ -1,9 +1,7 @@
-
 import { Component } from "solid-js";
 import { IconProps } from "./types";
 
-export
-const XIcon: Component<IconProps> = (props) => (
+export const XIcon: Component<IconProps> = (props) => (
   <svg
     class={props.class}
     fill="none"
@@ -18,4 +16,3 @@ const XIcon: Component<IconProps> = (props) => (
     />
   </svg>
 );
-

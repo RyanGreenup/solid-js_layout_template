@@ -12,7 +12,7 @@ import { Component, createSignal } from "solid-js";
  *                              whilst this can be ommited, the animation seems smoother with it and
  *                              the animation possibly can be disabled or modified for the main content with this structure
  */
- const MainContent: Component = () => {
+const MainContent: Component = () => {
   const [activeTab, setActiveTab] = createSignal("recent");
 
   const tabs = [

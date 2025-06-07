@@ -1,4 +1,3 @@
-
 import { Component } from "solid-js";
 import { IconProps } from "./types";
 
@@ -23,4 +22,3 @@ export const SettingsIcon: Component<IconProps> = (props) => (
     />
   </svg>
 );
-

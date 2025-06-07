@@ -1,10 +1,7 @@
-
 import { Component } from "solid-js";
 import { IconProps } from "./types";
 
-export
-
-const HomeIcon: Component<IconProps> = (props) => (
+export const HomeIcon: Component<IconProps> = (props) => (
   <svg
     class={props.class}
     fill="none"

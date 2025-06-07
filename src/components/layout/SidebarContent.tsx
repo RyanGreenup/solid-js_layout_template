@@ -48,9 +48,9 @@ export const navItems: NavItem[] = [
   { id: "backup", label: "Backup", icon: HeartIcon, active: false },
 ];
 
-
-
-export const SidebarContentWrapper = (props: { navItems: NavItem[] }): JSXElement => {
+export const SidebarContentWrapper = (props: {
+  navItems: NavItem[];
+}): JSXElement => {
   return (
     <>
       {/* Navigation items */}
@@ -77,7 +77,6 @@ export const SidebarContentWrapper = (props: { navItems: NavItem[] }): JSXElemen
     </>
   );
 };
-
 
 const SidebarContent = () => {
   return <SidebarContentWrapper navItems={navItems} />;

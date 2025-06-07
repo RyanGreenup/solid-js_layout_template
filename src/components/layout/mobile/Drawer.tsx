@@ -9,9 +9,9 @@ interface OverlayProps {
 }
 
 /**
-* This provides an overlay that dims the background. The user can click it to fire
-* an action. In this layout it's used by the mobile drawer to close it when opened.
-*/
+ * This provides an overlay that dims the background. The user can click it to fire
+ * an action. In this layout it's used by the mobile drawer to close it when opened.
+ */
 export const Overlay: Component<OverlayProps> = (props) => (
   <div
     classList={{
@@ -125,7 +125,5 @@ const MobileDrawer: Component<MobileDrawerProps> = (props) => {
     </div>
   );
 };
-
-
 
 export default MobileDrawer;

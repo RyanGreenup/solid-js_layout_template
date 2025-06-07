@@ -13,8 +13,6 @@ interface TopNavbarProps {
   ) => void;
 }
 
-
-
 const TopNavbar: Component<TopNavbarProps> = (props) => (
   <nav
     class={`fixed top-0 left-0 right-0 h-navbar-height bg-base-200/95 backdrop-blur-md border-b border-base-300 z-50 hidden md:flex`}
@@ -45,6 +43,5 @@ const TopNavbar: Component<TopNavbarProps> = (props) => (
     </div>
   </nav>
 );
-
 
 export default TopNavbar;

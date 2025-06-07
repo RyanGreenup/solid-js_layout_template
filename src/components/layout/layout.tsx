@@ -23,12 +23,6 @@ import DesktopSidebar from "./desktop/Sidebar";
 import MobileDrawer, { Overlay } from "./mobile/Drawer";
 import TopNavbar from "./desktop/Navbar";
 
-
-
-
-
-
-
 interface ResponsiveLayoutProps {
   sidebarContent: Accessor<JSXElement>;
   children?: any;
@@ -164,4 +158,3 @@ export const ResponsiveLayout: Component<ResponsiveLayoutProps> = (props) => {
     </div>
   );
 };
-

@@ -9,15 +9,12 @@ import ResponsiveLayoutPage, {
 } from "./components/layout/layout";
 import SidebarContent, { navItems } from "./components/layout/SidebarContent";
 
-
 export default function App() {
   return (
     <Router
       root={(props) => (
         <>
-          <ResponsiveLayout
-            sidebarContent={() => <SidebarContent/>}
-          >
+          <ResponsiveLayout sidebarContent={() => <SidebarContent />}>
             <Suspense>{props.children}</Suspense>
           </ResponsiveLayout>
         </>

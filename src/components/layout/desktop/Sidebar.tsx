@@ -1,7 +1,6 @@
 import { Component, createEffect, JSXElement } from "solid-js";
 import { SidebarProps } from "../types";
 
-
 const SIDEBAR_WIDTH = "w-80";
 
 /**
