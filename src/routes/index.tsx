@@ -8,6 +8,17 @@ export default function Home() {
         Hello world!
       </h1>
       <Counter />
+
+      <div class="my-8">
+        <a
+          href="/showcase"
+          class="block max-w-sm mx-auto bg-white rounded-lg shadow-lg p-6 animate-pulse hover:animate-none hover:scale-105 hover:shadow-xl transition-all duration-300 hover:bg-gradient-to-r hover:from-sky-50 hover:to-blue-50"
+        >
+          <div class="text-2xl font-bold text-sky-700 mb-2">🎨 Showcase</div>
+          <p class="text-gray-600">Explore amazing Solid projects and examples</p>
+        </a>
+      </div>
+
       <p class="mt-8">
         Visit{" "}
         <a
