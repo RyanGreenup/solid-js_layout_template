@@ -1,11 +1,12 @@
 import { IconProps } from "./icons/types";
 import { HeartIcon } from "./icons/Heart";
 
-import { Component } from "solid-js";
+import { Component, JSXElement } from "solid-js";
 import { HomeIcon } from "./icons/Home";
 import { SearchIcon } from "./icons/Search";
 import { UserIcon } from "./icons/User";
 import { SettingsIcon } from "./icons/Settings";
+import NavItemButton from "./NavItemButton";
 
 export interface NavItem {
   id: string;
@@ -46,3 +47,40 @@ export const navItems: NavItem[] = [
   { id: "security", label: "Security", icon: SettingsIcon, active: false },
   { id: "backup", label: "Backup", icon: HeartIcon, active: false },
 ];
+
+
+
+export const SidebarContentWrapper = (props: { navItems: NavItem[] }): JSXElement => {
+  return (
+    <>
+      {/* Navigation items */}
+      <nav class="space-y-2">
+        {props.navItems.map((item) => (
+          <NavItemButton item={item} />
+        ))}
+      </nav>
+
+      {/* Quick actions */}
+      <div class="mt-8 p-4 bg-base-200 rounded-xl">
+        <h3 class="text-sm font-semibold text-base-content mb-3">
+          Quick Actions
+        </h3>
+        <div class="space-y-2">
+          <button class="w-full px-4 py-2 text-sm font-medium bg-primary text-primary-content rounded-lg hover:bg-primary/90 transition-colors duration-200">
+            🚀 New Project
+          </button>
+          <button class="w-full px-4 py-2 text-sm font-medium bg-success text-success-content rounded-lg hover:bg-success/90 transition-colors duration-200">
+            📊 View Reports
+          </button>
+        </div>
+      </div>
+    </>
+  );
+};
+
+
+const SidebarContent = () => {
+  return <SidebarContentWrapper navItems={navItems} />;
+};
+
+export default SidebarContent;

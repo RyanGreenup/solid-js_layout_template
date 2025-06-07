@@ -6,9 +6,8 @@ import "./app.css";
 import ResponsiveLayoutPage, {
   MainContent,
   ResponsiveLayout,
-  SidebarContent,
 } from "./components/layout/layout";
-import { navItems } from "./components/layout/SidebarContent";
+import SidebarContent, { navItems } from "./components/layout/SidebarContent";
 
 
 export default function App() {
@@ -17,7 +16,7 @@ export default function App() {
       root={(props) => (
         <>
           <ResponsiveLayout
-            sidebarContent={() => <SidebarContent navItems={navItems} />}
+            sidebarContent={() => <SidebarContent/>}
           >
             <Suspense>{props.children}</Suspense>
           </ResponsiveLayout>
